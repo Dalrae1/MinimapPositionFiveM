@@ -4,7 +4,7 @@ function getMapPosition()
 	local minimapRawX, minimapRawY = GetScriptGfxPosition(-0.0045, 0.002 + (-0.188888))
 	ResetScriptGfxAlign()
 	local resX, resY = GetActiveScreenResolution()
-	local aspectRatio = resX/resY--GetAspectRatio()
+	local aspectRatio = GetAspectRatio()
 	local scaleX = 1/resX
 	local scaleY = 1/resY
 	minimap.width = scaleX*(resX/(4*aspectRatio))
